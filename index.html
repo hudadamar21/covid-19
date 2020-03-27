@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-success shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Covid-19</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Indonesia</a>
+                    <a class="nav-item nav-link" href="dunia.html">Dunia</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center mt-3">
+                <h2>Status Covid-19 di Indonesia</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 mt-3">
+                <div class="card text-white shadow bg-warning mb-3">
+                    <div class="card-header text-center">Positif</div>
+                    <div class="card-body">
+                        <h3 class="card-title positif"></h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card text-white shadow bg-success mb-3">
+                    <div class="card-header text-center">Sembuh</div>
+                    <div class="card-body">
+                        <h3 class="card-title sembuh"></h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card text-white shadow bg-danger mb-3">
+                    <div class="card-header text-center">Meninggal</div>
+                    <div class="card-body">
+                        <h3 class="card-title meninggal"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md mt-3">
+                <div class="table-responsive">
+                    <table id="datatable" class="table table-light table-bordered table-striped table-fixed shadow">
+                        <thead class="thead-light ">
+                            <tr ">
+                            <th>#</th>
+                            <th>Nama Provinsi</th>
+                            <th>Positif</th>
+                            <th>Sembuh</th>
+                            <th>Meninggal</th>
+                        </tr">
+                        </thead>
+                        <tbody class="daftar-provinsi">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
